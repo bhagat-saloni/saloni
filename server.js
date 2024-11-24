@@ -9,7 +9,14 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({ origin: "http://127.0.0.1:5501" })); // Allow requests from your frontend origin
+app.use(
+    cors({
+        origin: [
+            "http://127.0.0.1:5501", // Local development
+            "https://bhagat-saloni.github.io", // GitHub Pages
+        ],
+    })
+);
 
 // Contact form endpoint
 app.post("/api/contact", async (req, res) => {
