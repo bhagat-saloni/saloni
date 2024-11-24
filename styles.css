@@ -1,0 +1,760 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+    /* width: 1440px; */
+    /* Limit the body width for large screens */
+    margin: 0 auto;
+    /* Center the body */
+    padding: 0 0px;
+    background-color: #1C1C28;
+    color: #F1FAEE;
+    scroll-behavior: smooth;
+}
+
+/* h1,
+h2,
+h3 {
+    font-weight: 700;
+    text-align: center;
+    /* font-size: 1rem; */
+/* Relative to root font size */
+/* margin: 10px 0; */
+/* } */
+*/ .dark-section {
+    padding: 50px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #2f2f47;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: #F1FAEE !important;
+}
+
+.nav-link:hover {
+    color: #F4A261 !important;
+}
+
+.nav-link.active {
+    color: #E63946 !important;
+}
+
+.navbar-toggler {
+    border-color: #F1FAEE;
+    /* Change border color to off-white */
+}
+
+.navbar-toggler:hover {
+    background-color: #3b3b58;
+    /* Muted steel blue for hover background */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23F1FAEE' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Custom icon color (off-white) */
+}
+
+/* Background effect (connecting dots) */
+.background-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('background-effect.png') center/cover no-repeat;
+    z-index: -1;
+}
+
+/* #about { */
+/* padding-top: 110px; */
+/* Adjust to match navbar height */
+/* margin-top: 110px; */
+/* Counteract the padding visually */
+/* } */
+
+/* Main container for the profile section */
+.profile-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    /* Full viewport height */
+    box-sizing: border-box;
+    margin-top: 10px;
+    /* Ensure padding is accounted for */
+}
+
+/* Text section styles */
+.text-section {
+    flex: 1;
+}
+
+.intro {
+    /* font-size: 18px;
+    color: #bbb;
+    margin-bottom: 10px; */
+    font-size: 20px;
+    /* Adjust font size */
+    color: #457B9D !important;
+    display: block;
+    left: -40%;
+    /* Ensure it's a block element */
+    margin: 0;
+    /* Remove any bottom margin */
+    line-height: 2;
+    /* Tighten line spacing */
+
+}
+
+.name {
+    /* font-size: 64px;
+    font-weight: bold;
+    position: relative;
+    left: -40%; */
+    font-size: 64px;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    margin: 0;
+    color: #F1FAEE !important;
+    /* Remove any top margin */
+    /* line-height: 1; */
+    /* Tighten spacing */
+}
+
+.description {
+    font-size: 60px;
+    color: #457B9D !important;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 60px;
+    overflow: visible;
+}
+
+/* General styles for all icons */
+.social-links a {
+    color: #F1FAEE;
+    /* Icon color */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #F4A261;
+    /* Hover orange */
+    transform: scale(1.2);
+    /* Slight zoom effect */
+}
+
+.social-links svg {
+    width: 32px;
+    /* Default size */
+    height: 32px;
+    /* transition: filter 0.3s ease, transform 0.3s ease; */
+    /* Smooth scaling effect */
+}
+
+
+.social-links .github svg path {
+    fill: white;
+    /* Default color */
+    transition: fill 0.3s ease;
+    /* Smooth hover transition */
+}
+
+.social-links .github:hover svg path {
+    fill: #000000;
+    transform: scale(1.2);
+    /* GitHub's default black or any custom color */
+}
+
+
+/* LinkedIn Icon: Turns blue */
+.social-links .linkedin svg path {
+    fill: black;
+    /* Default color */
+    transition: fill 0.3s ease;
+    /* Smooth hover transition */
+}
+
+.social-links .linkedin:hover svg path {
+    fill: #0077b5;
+    transform: scale(1.2);
+    /* LinkedIn blue */
+}
+
+
+.social-links .gmail svg path {
+    fill: black;
+    /* Default color */
+    transition: fill 0.3s ease;
+    /* Smooth hover transition */
+}
+
+.social-links .gmail:hover svg path {
+    fill: #EA4335;
+    transform: scale(1.2);
+    /* Gmail red */
+}
+
+/* GitLab Icon: Turns orange */
+.social-links img.gitlab:hover {
+    filter: brightness(0) sepia(1) hue-rotate(30deg) saturate(5);
+    /* Turns orange */
+}
+
+/*gmail animaion*/
+.gmail-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.gmail-icon {
+    cursor: pointer;
+}
+
+.gmail-text {
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    /* Fully transparent */
+    transform: translateX(-20px);
+    /* Slightly off-screen */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Smooth animation */
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Show Gmail text on active state */
+.gmail-wrapper.show .gmail-text {
+    visibility: visible;
+    /* Make it visible */
+    opacity: 1;
+    /* Fade in */
+    transform: translateX(0);
+    /* Slide into view */
+}
+
+.image-section {
+    width: 300px;
+    /* Set a fixed width for the image */
+    height: 300px;
+    /* Set a fixed height for the image */
+    display: flex;
+    justify-content: left;
+    /* Center the image inside the container */
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: 100%;
+    /* Maintain proportions */
+    object-fit: cover;
+    border-radius: 50%;
+    /* Crop and fit the image neatly */
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow */
+}
+
+.about-section {
+    background-color: #1C1C28;
+    /* Background color */
+    color: #F1FAEE;
+    /* Text color */
+    padding: 50px 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Slightly rounded edges */
+    margin: 50px auto;
+    /* Center horizontally with vertical space */
+    text-align: center;
+    /* Center-align all text */
+    /* opacity: 0; */
+    /* Initially hidden */
+    /* transform: translateY(50px); */
+    /* Slide from below */
+    /* transition: opacity 1s ease, transform 1s ease; */
+    /* Smooth transition */
+}
+
+/* .about-section.visible { */
+/* opacity: 1; */
+/* Fully visible */
+/* transform: translateY(0); */
+/* Reset position */
+/* } */
+
+.about-section h2 {
+    font-size: 2rem;
+    /* Set heading font size */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    font-weight: bold;
+    color: #F1FAEE;
+}
+
+.about-section p {
+    font-size: 1rem;
+    /* Standard paragraph font size */
+    line-height: 1.8;
+    /* Increase spacing between lines */
+    max-width: 1200px;
+    /* Stretch paragraph width to make it wider */
+    margin: 0 auto;
+    /* Center the paragraph block */
+    text-align: justify;
+    /* Justify the text for even alignment */
+}
+
+/* Skills Section */
+.skill-section {
+    background-color: #1c1c28;
+    color: #fff;
+    /* opacity: 0; */
+    /* Initially hidden */
+    /* transform: translateY(50px); */
+    /* Slide from below */
+    /* transition: opacity 1s ease, transform 1s ease; */
+    cursor: pointer;
+}
+
+.skills-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.skill img {
+    width: 70px;
+    height: 64px;
+    filter: brightness(0.8);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+    filter: brightness(1);
+}
+
+.skill:hover img {
+    transform: scale(1.2);
+}
+
+.skill:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* General Timeline Styling */
+.timeline {
+    position: relative;
+}
+
+.timeline-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.timeline-content {
+    border-left: 4px solid #e63946;
+    /* Accent color for timeline connection */
+    padding-left: 15px;
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.timeline-content ul {
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.timeline-content ul li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.bg-dark {
+    background-color: #1c1c28 !important;
+}
+
+.text-light {
+    color: #f1faee !important;
+}
+
+
+.dark-section {
+    background-color: #1c1c28;
+    color: #f1faee;
+}
+
+.education-box {
+    border-left: 5px solid #e63946;
+    /* Accent color */
+}
+
+.degree-row h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.degree-row .education-dates {
+    color: #a8dadc;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.university a {
+    color: #a8dadc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.university a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1rem;
+    list-style: disc;
+}
+
+ul li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #f4a261;
+    font-weight: bold;
+}
+
+.project-tile {
+    background-color: #1c1c28;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.project-image {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f1faee;
+}
+
+.card-text {
+    color: #a8dadc;
+    font-size: 0.9rem;
+}
+
+.card-footer a {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.tags span {
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+.tags .badge {
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* #contactForm {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    /* Add subtle shadow */
+/* } */
+
+/* #contactForm .form-control:focus {
+    border-color: #f8f9fa;
+    /* Light border on focus */
+/* box-shadow: none; */
+/* Remove default shadow */
+/* } */
+
+/* Contact form custom styling */
+/* Contact form custom styling */
+#contactForm {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    background-color: #1c1c28;
+    /* Match the dark theme */
+    border-radius: 8px;
+    /* Rounded corners */
+    color: #eaeaea;
+    /* Light grey for text */
+}
+
+#contactForm .form-control {
+    color: #eaeaea;
+    /* Light grey text inside fields */
+    background-color: #181822;
+    /* Slightly lighter dark background */
+    border: 1px solid #41415a;
+    /* Border in consistent dark-grey */
+    padding: 10px;
+    font-size: 16px;
+    /* Maintain readability */
+}
+
+#contactForm .form-control:focus {
+    border-color: #6c63ff;
+    /* Accent color for focus */
+    background-color: #1a1a1a;
+    /* Keep background consistent */
+    color: #ffffff;
+    /* Ensure text remains visible */
+    box-shadow: none;
+    /* Remove default shadow */
+}
+
+/* Placeholder styling */
+#contactForm .form-control::placeholder {
+    color: #888888;
+    /* Muted grey for placeholders */
+    opacity: 1;
+    /* Fully visible */
+}
+
+/* Button styling */
+#contactForm button {
+    background-color: #7d5fff;
+    /* Accent color */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #5753c9;
+    /* Slightly darker accent on hover */
+}
+
+/* Form error message styling */
+#form-error {
+    color: #ff4c4c;
+    /* Bright red for errors */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#resume {
+    margin-top: 100px;
+    /* To prevent overlap with fixed navbar */
+    padding: 50px;
+    background-color: #1c1c28;
+    text-align: center;
+}
+
+.download-resume {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #7d5fff;
+    border-radius: 5px;
+}
+
+.download-resume:hover {
+    background-color: #5753c9;
+}
+
+
+/* new footer */
+/* General Footer Styling */
+#footer {
+    background-color: #2f2f47;
+    /* Adjust to your desired background color */
+    padding: 10px 20px;
+    /* Space around the footer */
+    color: #fff;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    /* Limit the container width */
+    margin: 0 auto;
+    /* Center the content */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Align items vertically */
+    flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
+}
+
+/* Paragraph and Link Styling */
+.footer-container p {
+    margin: 0;
+}
+
+.footer-container .des {
+    margin-left: 22rem;
+    /* Add some spacing between text */
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    /* Add hover effect */
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .footer-container p,
+    .footer-container a {
+        margin-bottom: 10px;
+        /* Add spacing between stacked items */
+    }
+}
+
+
+#resume {
+    margin-top: 100px;
+    /* Prevent overlap with fixed navbar */
+    padding: 50px;
+    background-color: #1c1c28;
+    text-align: center;
+    min-height: 200px;
+    /*
+    /* Ensure the section is visible */
+}
+
+.download-resume {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #7d5fff;
+    border-radius: 5px;
+}
+
+.download-resume:hover {
+    background-color: #5753c9;
+}
+
+
+/* common things */
+.section {
+    opacity: 1;
+    /* Fully visible by default */
+    transform: translateY(20px);
+    /* Default position */
+    transition: opacity 2s ease, transform 2s ease;
+    /* Smooth animation */
+}
+
+/* When the animation triggers */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Initial animation setup */
+.section:not(.animate) {
+    opacity: 0;
+    /* Fade effect starts from invisible */
+    transform: translateY(50px);
+    /* Slide in from below */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #1c1c28;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hide Header */
+header.hidden {
+    opacity: 0;
+    /* Make it invisible */
+    pointer-events: none;
+    /* Disable interactions */
+    transform: translateY(-100%);
+    /* Slide it out of view */
+}
