@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Saloni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="profile-container"
+        class="profile-container container-fluid d-flex align-items-center justify-content-center text-center py-5">
+        <div class="row w-100">
+            <!-- Text content -->
+            <div class="col-md-6 text-section d-flex flex-column justify-content-center align-items-start">
+                <p class="intro fs-5 text-muted">Hi! I'm</p>
+                <h1 class="name display-4 fw-bold text-white">Saloni</h1>
+                <p class="description fs-4 text-light">Developer, always a student & a seeker</p>
+                <!-- Social media icons -->
+                <div class="social-links d-flex gap-3 mt-3">
+                    <a href="https://github.com/bhagat-saloni/" class="github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32px" height="32px">
+                            <path
+                                d="M25,1C12,1,2,11,2,24c0,10,6.6,19,15.9,22.1c1.2,0.3,1.6-0.5,1.6-1.1v-4.2c-6.5,1.5-8-2.8-8-2.8c-1.1-2.7-2.7-3.4-2.7-3.4 c-2.3-1.6,0.2-1.5,0.2-1.5c2.5,0.2,3.8,2.6,3.8,2.6c2.2,3.8,5.8,2.7,7.2,2.1c0.2-1.6,0.9-2.7,1.7-3.4c-5.1-0.6-10.5-2.6-10.5-11.6 c0-2.6,0.9-4.7,2.5-6.4c-0.3-0.6-1.1-3,0.2-6.3c0,0,2-0.6,6.5,2.4c1.9-0.5,4-0.8,6-0.8c2,0,4.1,0.3,6,0.8c4.5-3,6.5-2.4,6.5-2.4 c1.3,3.3,0.5,5.7,0.2,6.3c1.5,1.7,2.5,3.9,2.5,6.4c0,9-5.4,11-10.5,11.6c0.9,0.8,1.7,2.4,1.7,4.8v7.1c0,0.6,0.4,1.5,1.6,1.1 C41.4,43,48,34,48,24C48,11,38,1,25,1z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saloni-1b0212210/" class="linkedin" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32px" height="32px">
+                            <path
+                                d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z" />
+                        </svg>
+                    </a>
+                    <div class="gmail-wrapper">
+                        <a href="#" class="gmail gmail-icon" onclick="toggleGmail(event)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32px" height="32px">
+                                <path
+                                    d="M 0 7 L 0 9.875 L 25 29.71875 L 50 10.125 L 50 7 Z M 0 12.40625 L 0 43 L 50 43 L 50 12.65625 L 25.625 31.78125 C 25.445313 31.921875 25.21875 32 25 32 C 24.78125 32 24.558594 31.925781 24.375 31.78125 Z" />
+                            </svg>
+                        </a>
+                        <span class="gmail-text">bhagat.saloni4@gmail.com</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Profile picture -->
+            <div class="col-md-6 image-section">
+                <img src="profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle mx-auto d-block">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section py-5 dark-section section scroll-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">About Me</h2>
+                    <p>
+                        I am currently pursuing a Masters in Computer Science at the University of Southern California.
+                        My academic journey and professional experiences have equipped me with a strong foundation in
+                        software
+                        development and problem-solving. I hold a Bachelor's degree in Information Science and
+                        Technology from B. M. S.
+                        College of Engineering, where I developed a solid background in data structures, algorithms,
+                        databases, and
+                        web development, but my passion for computers goes way back to when I was in 4th grade and made
+                        my
+                        first scratch project. Ever since then I have always been making something new and innovative
+                        from everything
+                        I see and what would be a better way to do that than <span class="to">to take all the control
+                            and code it
+                            entirely.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skill-section section py-5 scroll-section">
+        <div class="container">
+            <h2 class="skills-heading text-center mb-4">Skills</h2>
+            <div class="row">
+                <!-- Skill Item -->
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/python.png" alt="Python" class="img-fluid">
+                    <p>Python</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/javascript.png" alt="JavaScript" class="img-fluid">
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/React.png" alt="React" class="img-fluid">
+                    <p>React</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/TypeScript.png" alt="TypeScript" class="img-fluid">
+                    <p>TypeScript</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/Node.png" alt="Node" class="img-fluid">
+                    <p>Node</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/C.png" alt="C" class="img-fluid">
+                    <p>C</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/C++.png" alt="C++" class="img-fluid">
+                    <p>C++</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/MySQL.png" alt="MySQL" class="img-fluid">
+                    <p>MySQL</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/HTML.png" alt="HTML" class="img-fluid">
+                    <p>HTML</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/CSS.png" alt="CSS" class="img-fluid">
+                    <p>CSS</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/PHP.png" alt="PHP" class="img-fluid">
+                    <p>PHP</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill">
+                    <img src="icons/PostgreSQL.png" alt="PostgreSQL" class="img-fluid">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Git.png" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Bitbucket.png" alt="Bitbucket">
+                    <p>Bitbucket</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Jira.png" alt="Jira">
+                    <p>Jira</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Jest.png" alt="Jest">
+                    <p>Jest</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/AndroidStudio.png"
+                        alt="Android Studio">
+                    <p>Android Studio</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Pandas.png" alt="Pandas">
+                    <p>Pandas</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Numpy.png" alt="Numpy">
+                    <p>Numpy</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/MongoDB.png" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/ExpressJS.png" alt="ExpressJS">
+                    <p>ExpressJS</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Bootstrap.png" alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Next.png" alt="Next.js">
+                    <p>Next.js</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 text-center skill"><img src="icons/Salesforce.png" alt="Salesforce">
+                    <p>Salesforce</p>
+                </div>
+                <!-- Add more skills here -->
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="experience-section py-5 section scroll-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center order-md-2">
+                        <div class="timeline-icon">
+                            <a href="https://en.wikipedia.org/wiki/Byju%27s">
+                                <img src="icons/tringapps.png" alt="tringapps" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-1">
+                        <div class="timeline-content p-4 bg-dark text-light rounded shadow">
+                            <h3>Software Developer Intern</h3>
+                            <p><strong>Tringapps, Inc. </strong> | June 2025 - August 2025</p>
+                            <ul>
+                                <li>Designed and implemented an LLM-driven chatbot leveraging Amazon Lex, AWS Lambda,
+                                    and Bedrock, streamlining product search, comparison, and support processes.</li>
+                                <li>Integrated enterprise systems (Oracle DB + Salesforce CRM) via secure APIs to
+                                    provide personalized recommendations and order-specific support in real time.</li>
+                                <li>Optimized query response times by implementing caching and structured knowledge
+                                    retrieval, improving user satisfaction scores in testing.
+                                </li>
+                                <li>Developed dynamic fallback handling and intent clarification to boost chatbot
+                                    accuracy for ambiguous or incomplete queries.</li>
+                                <li>Collaborated with cross-functional teams to refine conversation flows and align AI
+                                    responses with business goals.</li>
+                                <li>Tested and deployed using CI/CD pipelines, ensuring minimal downtime and easy
+                                    rollbacks during iterations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <div class="timeline-icon">
+                            <a href="https://www.linkedin.com/company/dacwayit/?originalSubdomain=in">
+                                <img src="icons/dacway.png" alt="dacway" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="timeline-content p-4 bg-dark text-light rounded shadow">
+                            <h3>Software Intern</h3>
+                            <p><strong>Dacway IT Solutions Private Limited</strong> | April 2023 - November 2023</p>
+                            <ul>
+                                <li>Worked as a Full-stack software intern in the developer’s team.</li>
+                                <li>Assisted in developing and maintaining software applications (Zneex and
+                                    Vrukshavalli)
+                                </li>
+                                <li>Provided production support for issues that were faced by the business teams.</li>
+                                <li>Participated in coding, debugging, and testing to improve application functionality.
+                                </li>
+                                <li>Gained hands-on experience with tools and technologies like Cross Platform
+                                    Development
+                                    tools.</li>
+                                <li>Collaborate with team members to troubleshoot and resolve software issues.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline Item 1 -->
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center order-md-2">
+                        <div class="timeline-icon">
+                            <a href="https://en.wikipedia.org/wiki/Byju%27s">
+                                <img src="icons/byjus.png" alt="Byju's" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-1">
+                        <div class="timeline-content p-4 bg-dark text-light rounded shadow">
+                            <h3>Software Engineer</h3>
+                            <p><strong>Byju’s</strong> | July 2022 - November 2022</p>
+                            <ul>
+                                <li>Worked as Full stack software developer in the WMS(Warehouse Management System)
+                                    team,
+                                    along with this also
+                                    contributed to the OMS(Order Management System) team as well</li>
+                                <li>Provided production support for issues that were faced by the users.</li>
+                                <li>Made a separate inventory request line for refurbished products, on the OMS side.
+                                </li>
+                                <li>Developed special features for all the modules of Warehouse Inventory.</li>
+                                <li>Developed the very first testing program using Jest for a few modules of WMS
+                                    inventory
+                                    and also conducted a
+                                    Knowledge transfer session on Jest for the WMS(Warehouse Management System),
+                                    WOS(Warehouse Origination
+                                    System) and WFS(Warehouse Fulfillment System ) team.</li>
+                                <li>Worked on Tangible Play(Osmo) project: In WMS, created a batch job process in one of
+                                    the
+                                    inventory’s modules.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <div class="timeline-icon">
+                            <a href="https://stratos.studio/">
+                                <img src="icons/stratos.png" alt="stratos" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="timeline-content p-4 bg-dark text-light rounded shadow">
+                            <h3>Software Intern</h3>
+                            <p><strong>Stratos Studios Private Limited</strong> | April 2022 - June 2022</p>
+                            <ul>
+                                <li>Worked on the Salesforce platform.
+                                </li>
+                                <li>Used CRM tools to build and manage organizational operations. Such as using Flows to
+                                    automate the collection of data and perform
+                                    action according to the condition as well as developed programs using apex.</li>
+                                <li>Earned 4 trailhead Super badges: App Customization Specialist, Security Specialist,
+                                    Process Automation Specialist, Business
+                                    Administration Specialist <a href="https://trailblazer.me/id/sa1oni"
+                                        style="color: antiquewhite;">trailblazer.me/id/sa1oni </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="dark-section section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="row g-4">
+                <!-- Master's Degree -->
+                <div class="col-12 col-lg-6">
+                    <div class="education-box p-4 bg-dark text-light rounded shadow">
+                        <div class="degree-row d-flex justify-content-between align-items-center">
+                            <h3 class="mb-2">Master of Science in Computer Science</h3>
+                            <span class="education-dates">Jan 2024 – Dec 2025</span>
+                        </div>
+                        <p class="university">
+                            <a href="https://www.usc.edu" target="_blank" class="text-decoration-none text-warning">
+                                University of Southern California
+                            </a>
+                        </p>
+                        <h4>Courses</h4>
+                        <ul>
+                            <li>Operating Systems, Machine Learning for Data Science, Analysis of Algorithm, Information
+                                Retrieval and Web Search Engines, Natural Language Processing, Databases</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Bachelor's Degree -->
+                <div class="col-12 col-lg-6">
+                    <div class="education-box p-4 bg-dark text-light rounded shadow">
+                        <div class="degree-row d-flex justify-content-between align-items-center">
+                            <h3 class="mb-2">Bachelor of Engineering in Information Science and Engineering</h3>
+                            <span class="education-dates">Sep 2018 – July 2022</span>
+                        </div>
+                        <p class="university">
+                            <a href="https://www.bmsce.ac.in/" target="_blank"
+                                class="text-decoration-none text-warning">
+                                BMS College of Engineering, Bengaluru, India
+                            </a>
+                        </p>
+                        <h4>Courses</h4>
+                        <ul>
+                            <li>Data Structures, Algorithms, Operating Systems, Object-Oriented Programming using C++,
+                                Data Communication and Networking, Computer Networks and Security, Database Management
+                                Systems, Virtualization and Cloud Security, Machine Learning, Deep Learning.</li>
+                        </ul>
+                        <h4>Extracurricular Activities</h4>
+                        <ul>
+                            <li>Member of "BMSCE Upagraha" - The Satellite Club of BMSCE [2020-2022]</li>
+                        </ul>
+                        <h4>Awards</h4>
+                        <ul>
+                            <li>BMSCE Project Open Day 2022: My team received a Certificate of Appreciation for our
+                                final year project. It was among the top 10 projects out of 50 showcased at the Project
+                                Open Day. Additionally, we received a grant of Rs 5000.</li>
+                        </ul>
+                        <h4>Publication</h4>
+                        <ul>
+                            <li>Saloni, Subham Jain, K.R. Mamatha, 2022, “Cancelable Biometrics Using Deep Learning”,
+                                IJRTI publication, Volume 7 Issue 6, June-2022, ISSN No. 2456-3315, Page 1875-1883.
+                                Paper link:
+                                <a href="http://www.ijrti.org/papers/IJRTI2206281.pdf"
+                                    class="text-decoration-none text-warning">http://www.ijrti.org/papers/IJRTI2206281.pdf</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="dark-section section">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <!-- Project Tile 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 project-tile">
+                        <img src="icons/project1.png" alt="Project 1 Screenshot" class="card-img-top project-image">
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-primary">C</span>
+                                <span class="badge bg-secondary">Bitbucket</span>
+                            </div>
+                            <h3 class="card-title">Weenix Operating System</h3>
+                            <p class="card-text">UNIX-based monolithic kernel for a single-processor operating system.
+                                This
+                                kernel effectively
+                                supports a wide range of user space programs, developed in C. Implemented processes,
+                                threads,
+                                mutexes, VFS, V5FS, and Virtual Memory (Implemented virtual memory maps, page fault
+                                handler,
+                                anonymous and shadow objects, and systems calls such as fork(). With these, the Weenix
+                                kernel
+                                can manage user address spaces, run user-level code and service system calls).
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            <a href="https://github.com/bhagat-saloni/toy_op_sys/tree/main" target="_blank"
+                                class="btn btn-outline-light">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other projects -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 project-tile">
+                        <img src="icons/project2.jpg" alt="Project 2 Screenshot" class="card-img-top project-image">
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Google Cloud</span>
+                            </div>
+                            <h3 class="card-title">Cancelable Biometrics Using Deep Learning</h3>
+                            <p class="card-text">Biometrics authentication seems to provide huge benefits over passcode
+                                and
+                                token-based security,
+                                it also poses
+                                security and privacy concerns that must be addressed.To solve this difficulty,
+                                implemented
+                                Cartesian and Reed Solomon Algorithms on the fingerprints captured in the database to
+                                store
+                                the
+                                hash result in the system and then the hash output
+                                will be compared to the user’s original fingerprint to verify the identification of the
+                                user.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            <a href="https://github.com/bhagat-saloni/Cancelable_Biometrics" target="_blank"
+                                class="btn btn-outline-light">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 project-tile">
+                        <img src="icons/project3.png" alt="Project 3 Screenshot" class="card-img-top project-image">
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-danger">HTML</span>
+                                <span class="badge bg-info text-dark">ReactJS</span>
+                                <span class="badge bg-success">React-router</span>
+                                <span class="badge bg-secondary">React-hooks</span>
+                                <span class="badge bg-light text-dark">Postman</span>
+                                <span class="badge bg-dark">API</span>
+                            </div>
+                            <h3 class="card-title">Covid-19 Site</h3>
+                            <p class="card-text">Contributed to an open source project in GitHub platform. Used
+                                Javascript
+                                and
+                                React
+                                in order to
+                                solve the issues listed down by the contributors as well as added new features to
+                                the site.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            <a href="https://covid-trackify.netlify.app/" target="_blank" class="btn btn-outline-light">
+                                <i class="bi bi-link"></i> Website
+                            </a>
+                            <a href="https://github.com/pnayak1501/covid" target="_blank" class="btn btn-outline-light">
+                                <i class="bi bi-github"></i> Github
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 project-tile">
+                        <img src="icons/project4.png" alt="Project 4 Screenshot" class="card-img-top project-image">
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-primary">Machine Learning</span>
+                                <span class="badge bg-secondary">Data cleaning</span>
+                                <span class="badge bg-success">Logistic regression</span>
+                                <span class="badge bg-danger">Random forest classifier</span>
+                                <span class="badge bg-warning text-dark">Hyperparameter tuning</span>
+                                <span class="badge bg-info text-dark">Data analytics</span>
+                                <span class="badge bg-dark">Voting ensemble classifier</span>
+                                <span class="badge bg-light text-dark">API</span>
+                            </div>
+                            <h3 class="card-title">Telecom User Churn Prediction</h3>
+                            <p class="card-text">The user churn rate (leaving a particular service) can be predicted by
+                                analyzing data across several parameters pertaining to
+                                the average customer base within the industry.By integrating the telecom industry
+                                customer-churn
+                                data set with a Machine Learning framework, an effective solution was
+                                provided to deal with this Problem and the highest accuracy predicted was using a voting
+                                ensemble classifier.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            <a href="https://github.com/bhagat-saloni/Telecom_User_Churn_Prediction" target="_blank"
+                                class="btn btn-outline-light">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 project-tile">
+                        <img src="icons/project5.png" alt="Project 4 Screenshot" class="card-img-top project-image">
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-primary">XAMMP</span>
+                                <span class="badge bg-secondary">MySQL</span>
+                                <span class="badge bg-success">PHP</span>
+                                <span class="badge bg-danger">JavaScript</span>
+                                <span class="badge bg-warning text-dark">HTML</span>
+                                <span class="badge bg-info text-dark">CSS</span>
+                                <span class="badge bg-dark">Bootstrap</span>
+                            </div>
+                            <h3 class="card-title">Proctor Management Diary</h3>
+                            <p class="card-text">It provides an interface for communication between proctors and their
+                                proctees.This project includes sending the progress reports of each student to his/her
+                                proctor
+                                furnishing the details of class marks,
+                                and examination results as well as the proctor can update the student’s details and
+                                validate
+                                thier marks.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            <a href="https://github.com/bhagat-saloni/proctor_diary_management_system/tree/main"
+                                target="_blank" class="btn btn-outline-light">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 project-tile">
+                        <img src="icons/project6.jfif" alt="Project 6 Screenshot" class="card-img-top project-image">
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-primary">Machine Learning</span>
+                                <span class="badge bg-success">SVM Model</span>
+                                <span class="badge bg-warning text-dark">Decision Tree</span>
+                                <span class="badge bg-info text-dark">Tree Model</span>
+                                <span class="badge bg-danger">Logistic Regression</span>
+                            </div>
+                            <h3 class="card-title">Credit Card Fraud Management</h3>
+                            <p class="card-text">The Credit card fraud detection problem includes modeling past credit
+                                card
+                                transactions with the knowledge of the ones that turned out to be fraud. This model is
+                                then
+                                used
+                                to identify whether a new transaction is fraudulent or not. Enormous Data is processed
+                                every
+                                day
+                                and the model build must be fast enough to respond to the scam in time. 
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            <a href="https://github.com/bhagat-saloni/credit_card_fraud_detection/tree/main"
+                                target="_blank" class="btn btn-outline-light">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 project-tile">
+                            <img src="icons/project7.jpg" alt="Project 7 Screenshot" class="card-img-top project-image">
+                            <div class="card-body">
+                                <div class="tags mb-2">
+                                    <span class="badge bg-primary">Java</span>
+                                    <span class="badge bg-secondary">Android Studio (IDE)</span>
+                                    <span class="badge bg-success">XML (UI Layouts)</span>
+                                    <span class="badge bg-danger">Gradle (Build Automation)</span>
+                                    <span class="badge bg-warning text-dark">Android SDK</span>
+                                    <span class="badge bg-info text-dark">APIs</span>
+                                </div>
+                                <h3 class="card-title">Media Application</h3>
+                                <p class="card-text">Developed this application using Android Studio to deliver a
+                                    seamless
+                                    stream
+                                    of content links aggregated from numerous media sources. The latest version
+                                    introduces
+                                    powerful
+                                    features such as personalized recommendations based on user preferences, instant
+                                    notifications
+                                    for breaking updates, offline reading capabilities, and an elegant, user-friendly
+                                    design
+                                    to
+                                    ensure an engaging and intuitive experience for all users. 
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent text-center">
+                                <a href="https://github.com/bhagat-saloni/media_app" target="_blank"
+                                    class="btn btn-outline-light">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project tiles similarly -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="text-center mb-4">
+                        <h2 class="mb-3">Get in Touch</h2>
+                        <p>Whether you have a question or just want to say hi, I’ll get back to you!</p>
+                    </div>
+                    <form id="contactForm" class="p-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input id="name" type="text" class="form-control" placeholder="First and Last Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone (Optional)</label>
+                            <input id="phone" type="tel" class="form-control" placeholder="+9 999-999-9999">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" type="email" class="form-control" placeholder="email@domain.tld" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message here" rows="5"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-light px-4">Send</button>
+                        </div>
+                        <p id="form-error" class="text-danger mt-3"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="asset/Saloni_Resume.pdf" download="Saloni_Resume.pdf" class="download-resume">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer id="footer">
+    <div class="container">
+        <div class="footer-container">
+            <p>© 2024 All rights reserved <span class="des">Designed by Saloni</span></p>
+            <a href="#">License</a>
+        </div>
+    </div>
+</footer>
+
+
+</html>
